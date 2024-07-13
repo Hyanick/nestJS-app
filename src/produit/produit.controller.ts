@@ -6,7 +6,7 @@ import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 @Controller()
 export class ProduitsController {
   constructor(private readonly produitsService: ProduitsService) {}
-  @Get('produits')
+  @Get('products')
   @ApiOperation({ summary: 'Get all produits' })
   @ApiResponse({ status: 200, description: 'Return all produits.' })
   getAllProducts() {
